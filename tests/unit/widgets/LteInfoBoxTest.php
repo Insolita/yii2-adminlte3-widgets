@@ -12,7 +12,8 @@ class LteInfoBoxTest extends LteTestCase
     public function testInfoBoxWidgetDefault()
     {
         $widget = LteInfoBox::widget(['text' => 'Foo', 'number' => 77]);
-        $expect ='<div class="info-box"><span class="info-box-icon bg-primary"><i class="fa fa-bullhorn"></i></span>'
+        $expect = '<div class="info-box bg-light">'
+            . '<span class="info-box-icon bg-primary"><i class="fa fa-bullhorn"></i></span>'
             . '<div class="info-box-content"><span class="info-box-text">Foo</span>'
             . '<span class="info-box-number">77</span></div></div>';
         expect($this->inline($widget))->equals($this->inline($expect));
@@ -27,7 +28,7 @@ class LteInfoBoxTest extends LteTestCase
             'number' => 77,
             'progressNumber' => 34,
             'showProgress' => true,
-            'description' => 'percentage'
+            'description' => 'percentage',
         ]);
         $expect
             = <<<HTML
