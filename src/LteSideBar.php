@@ -2,11 +2,11 @@
 
 namespace insolita\adminlte3;
 
-use function strtr;
 use yii\base\InvalidConfigException;
 use yii\bootstrap4\Nav;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
+use function strtr;
 
 class LteSideBar extends Nav
 {

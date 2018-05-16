@@ -13,12 +13,14 @@ class LteInfoBox extends Widget
     
     /**
      * info,success,warning,danger,light,dark,primary,secondary and *-gradient also
+     *
      * @var string
      */
     public $bgIconColor = Lte::TYPE_PRIMARY;
     
     /**
      * info,success,warning,danger,light,dark,primary,secondary and *-gradient also
+     *
      * @var string
      */
     public $bgColor = Lte::TYPE_LIGHT;
@@ -91,7 +93,7 @@ HTML;
                 [
                     '{number}' => $this->progressNumber,
                     '{text}' => $this->description,
-                    '{options}' => $this->bgColor ? '' : ' '.$this->bgIconColor,
+                    '{options}' => $this->bgColor ? '' : ' ' . $this->bgIconColor,
                 ]
             );
         }

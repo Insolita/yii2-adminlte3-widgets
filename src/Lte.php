@@ -2,9 +2,6 @@
 
 namespace insolita\adminlte3;
 
-use b;
-use yii\helpers\StringHelper;
-
 class Lte
 {
     const TYPE_INFO = 'info';

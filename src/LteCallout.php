@@ -9,6 +9,7 @@ class LteCallout extends Widget
 {
     /**
      * info,danger,success,warning,primary
+     *
      * @var string $type
      */
     public $type = Lte::TYPE_INFO;
@@ -28,8 +29,8 @@ class LteCallout extends Widget
      */
     public $options = [];
     
-    
     public $topTemplate = '<div {options}><h5>{title}</h5>';
+    
     public $endTemplate = '</div>';
     
     public function init()
@@ -41,14 +42,14 @@ class LteCallout extends Widget
             $this->topTemplate,
             [
                 '{options}' => Html::renderTagAttributes($this->options),
-                '{title}'    => $this->title,
+                '{title}' => $this->title,
             ]
         );
         if ($this->text) {
             echo $this->text;
         }
     }
-
+    
     public function run()
     {
         return $this->endTemplate;

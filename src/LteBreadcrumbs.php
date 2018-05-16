@@ -2,11 +2,11 @@
 
 namespace insolita\adminlte3;
 
+use yii\widgets\Breadcrumbs;
 use function ob_end_clean;
 use function ob_get_contents;
 use function ob_start;
 use function strtr;
-use yii\widgets\Breadcrumbs;
 
 class LteBreadcrumbs extends Breadcrumbs
 {
@@ -26,6 +26,6 @@ class LteBreadcrumbs extends Breadcrumbs
         parent::run();
         $breadcrumbs = ob_get_contents();
         ob_end_clean();
-        echo strtr($this->wrapTemplate, ['{breadcrumbs}'=>$breadcrumbs]);
+        echo strtr($this->wrapTemplate, ['{breadcrumbs}' => $breadcrumbs]);
     }
 }

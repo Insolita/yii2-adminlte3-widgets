@@ -9,6 +9,7 @@ class LteSmallBox extends Widget
 {
     /**
      * info,danger,success,warning,primary,secondary, dark and *-gradient also
+     *
      * @var string $type
      */
     public $type = Lte::TYPE_INFO;
