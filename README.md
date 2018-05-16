@@ -1,7 +1,9 @@
 AdminLte3 widgets
 ====================
 
-###Work in progress
+[![Build Status](https://travis-ci.org/Insolita/yii2-adminlte3-widgets.svg?branch=master)](https://travis-ci.org/Insolita/yii2-adminlte3-widgets)
+
+### Work in progress
 
 Installation
 ------------

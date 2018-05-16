@@ -4,7 +4,8 @@
     "keywords":          [ "yii" , "yii2" , "adminlte" , "widgets" ] ,
     "type":              "library" ,
     "require":           {
-        "insolita/yii2-adminlte3-asset": "~0.0.1"
+        "insolita/yii2-adminlte3-asset": "~0.0.1",
+        "bower-asset/js-cookie": "~2.1.0"
     } ,
     "require-dev":       {
         "yiisoft/yii2":        "~2.0.15" ,
@@ -22,6 +23,12 @@
             "tests\\":               "tests/"
         }
     },
+    "repositories":      [
+        {
+            "type": "composer" ,
+            "url":  "https://asset-packagist.org"
+        }
+    ] ,
     "license":           "MIT" ,
     "authors":           [
         {
