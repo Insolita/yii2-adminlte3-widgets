@@ -1,0 +1,33 @@
+{
+    "name":              "insolita/yii2-adminlte3-widgets" ,
+    "description":       "AdminLTE3 widgets for yii2" ,
+    "keywords":          [ "yii" , "yii2" , "adminlte" , "widgets" ] ,
+    "type":              "library" ,
+    "require":           {
+        "insolita/yii2-adminlte3-asset": "~0.0.1"
+    } ,
+    "require-dev":       {
+        "yiisoft/yii2":        "~2.0.15" ,
+        "phpunit/phpunit":     "^6.0|~7.0|~7.1" ,
+        "codeception/verify":  "1.0.*"
+    } ,
+    "autoload":          {
+        "psr-4": {
+            "insolita\\adminlte3\\": "src/" ,
+            "tests\\":               "tests/"
+        }
+    } ,
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\":               "tests/"
+        }
+    },
+    "license":           "MIT" ,
+    "authors":           [
+        {
+            "name":  "insolita" ,
+            "email": "webmaster100500@ya.ru"
+        }
+    ] ,
+    "minimum-stability": "dev"
+}

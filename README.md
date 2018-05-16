@@ -1,0 +1,23 @@
+AdminLte3 widgets
+====================
+
+###Work in progress
+
+Installation
+------------
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+php composer.phar require --prefer-dist insolita/yii2-adminlte3-widgets "~0.0.1"
+```
+
+or add
+
+```
+"insolita/yii2-adminlte3-widgets": "~0.0.1"
+```
+
+to the require section of your `composer.json` file.
