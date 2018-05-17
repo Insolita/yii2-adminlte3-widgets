@@ -95,7 +95,7 @@ HTML;
         return Html::tag('nav', $leftMenu . $search . $rightMenu, $this->options);
     }
     
-    protected function renderSearchForm()
+    protected function renderSearchForm():string
     {
         return strtr($this->searchTemplate, [
             '{action}' => $this->searchAction,
@@ -103,7 +103,7 @@ HTML;
         ]);
     }
     
-    protected function renderLeftItems()
+    protected function renderLeftItems():string
     {
         $widgetClass = $this->navWidgetClass;
         return $widgetClass::widget([
@@ -113,7 +113,7 @@ HTML;
         ]);
     }
     
-    protected function renderRightItems()
+    protected function renderRightItems():string
     {
         $widgetClass = $this->navWidgetClass;
         return $widgetClass::widget([

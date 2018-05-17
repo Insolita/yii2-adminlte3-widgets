@@ -127,7 +127,6 @@ HTML;
         if (empty($items)) {
             $items = '';
         } else {
-            //$linkOptions['data-toggle'] = 'dropdown';
             Html::addCssClass($options, 'has-treeview');
             if (is_array($items)) {
                 
