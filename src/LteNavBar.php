@@ -57,7 +57,7 @@ class LteNavBar extends Widget
             <input class="form-control form-control-navbar" type="search" placeholder="{Search}" aria-label="{Search}">
             <div class="input-group-append">
                 <button class="btn btn-navbar" type="submit">
-                    <i class="fa fa-search"></i>
+                    <i class="fas fa-search"></i>
                 </button>
             </div>
         </div>
@@ -76,13 +76,13 @@ HTML;
         Html::addCssClass($this->options, $this->isDark ? 'navbar-dark' : 'navbar-light');
         if ($this->toggleSidebar) {
             array_unshift($this->leftItems, '<li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+            <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>');
         }
         if ($this->controlSidebar) {
             array_push($this->rightItems, '<li class="nav-item">
             <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
-                    class="fa fa-th-large"></i></a>
+                    class="fas fa-th-large"></i></a>
         </li>');
         }
     }
